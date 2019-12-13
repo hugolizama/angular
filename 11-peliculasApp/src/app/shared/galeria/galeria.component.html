@@ -1,0 +1,88 @@
+<div class="row mb-5">
+  <div class="col">
+    <h2>{{ titulo }}</h2>
+    <hr />
+
+    <div *ngIf="!cargando" class="row animated fadeInLeft">
+      <div class="col-6">
+        <div class="row">
+          <div class="col-12 p-0">
+            <a [routerLink]="['/detalle', peliculas[0].id]">
+              <div class="card bg-dark text-white border-0">
+                <img [src]="peliculas[0].backdrop_path | imagen" class="card-img rounded-0">
+                <div class="card-img-overlay">
+                  <div class="card-img-footer">{{ peliculas[0].title }}</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6 p-0">
+            <a [routerLink]="['/detalle', peliculas[1].id]">
+              <div class="card bg-dark text-white border-0">
+                <img [src]="peliculas[1].backdrop_path | imagen" class="card-img rounded-0">
+                <div class="card-img-overlay">
+                  <div class="card-img-footer">{{ peliculas[1].title }}</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 p-0">
+            <a [routerLink]="['/detalle', peliculas[2].id]">
+              <div class="card bg-dark text-white border-0">
+                <img [src]="peliculas[2].backdrop_path | imagen" class="card-img rounded-0">
+                <div class="card-img-overlay">
+                  <div class="card-img-footer">{{ peliculas[2].title }}</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6">
+        <div class="row">
+          <div class="col-6 p-0">
+            <a [routerLink]="['/detalle', peliculas[3].id]">
+              <div class="card bg-dark text-white border-0">
+                <img [src]="peliculas[3].backdrop_path | imagen" class="card-img rounded-0">
+                <div class="card-img-overlay">
+                  <div class="card-img-footer">{{ peliculas[3].title }}</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 p-0">
+            <a [routerLink]="['/detalle', peliculas[4].id]">
+              <div class="card bg-dark text-white border-0">
+                <img [src]="peliculas[4].backdrop_path | imagen" class="card-img rounded-0">
+                <div class="card-img-overlay">
+                  <div class="card-img-footer">{{ peliculas[4].title }}</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 p-0">
+            <a [routerLink]="['/detalle', peliculas[5].id]">
+              <div class="card bg-dark text-white border-0">
+                <img [src]="peliculas[5].backdrop_path | imagen" class="card-img rounded-0">
+                <div class="card-img-overlay">
+                  <div class="card-img-footer">{{ peliculas[5].title }}</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

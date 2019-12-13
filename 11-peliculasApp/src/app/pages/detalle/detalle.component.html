@@ -1,0 +1,30 @@
+<div
+*ngIf="!cargando"
+class="container mt-4 mb-5 animated fadeIn fast">
+  <div class="row">
+    <div class="col-12">
+      <h1>{{ pelicula.title }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-5">
+      <img [src]=" pelicula.poster_path | imagen" class="img-thumbnail"/>
+    </div>
+
+    <div class="col-7">
+      <h3>Sinopsis</h3>
+      <hr/>
+      <p class="text-justify mb-3">{{ pelicula.overview }}</p>
+
+      <h4>Frase célebre</h4>
+      <p class="text-justify mb-3">{{ pelicula.tagline }}</p>
+
+      <p>Popularidad: <span class="badge badge-pill badge-primary">{{ pelicula.popularity }}</span></p>
+      <p>Voto promedio: <span class="badge badge-pill badge-primary">{{ pelicula.vote_average }}</span></p>
+
+      <a [routerLink]="['/', pag, textoBusqueda]" class="btn btn-outline-danger">
+        <span class="fa fa-arrow-circle-left"></span> Regresar
+      </a>
+    </div>
+  </div>
+</div>
