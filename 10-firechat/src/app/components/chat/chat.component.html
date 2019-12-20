@@ -10,7 +10,7 @@
     <span 
     [ngClass] = "{ 'badge-primary' : _cs.usuario.uid === chat.uid,
                    'badge-success' : _cs.usuario.uid !== chat.uid}"
-    class="badge">Fernando</span>
+    class="badge"> {{ chat.nombre }}</span>
     <p>
       {{ chat.mensaje }}
     </p>

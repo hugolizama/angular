@@ -5,15 +5,16 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyBL8QhGcLgheOb8fjPtxUU9ABeFwuBlUD8',
-    authDomain: 'firechat-842df.firebaseapp.com',
-    databaseURL: 'https://firechat-842df.firebaseio.com',
-    projectId: 'firechat-842df',
-    storageBucket: 'firechat-842df.appspot.com',
-    messagingSenderId: '155449342706',
-    appId: '1:155449342706:web:eee3519b3a433415a2ee6b'
+    apiKey: 'AIzaSyAF21UMAomTwLwYzJOGTdfBkkus-LfpM4E',
+    authDomain: 'pruebasyejercicios.firebaseapp.com',
+    databaseURL: 'https://pruebasyejercicios.firebaseio.com',
+    projectId: 'pruebasyejercicios',
+    storageBucket: 'pruebasyejercicios.appspot.com',
+    messagingSenderId: '869440119294',
+    appId: '1:869440119294:web:461934b5407ae0186b60af'
   }
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
