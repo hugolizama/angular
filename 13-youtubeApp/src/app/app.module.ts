@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { YoutubeService } from './services/youtube.service';
 import { HttpClientModule } from '@angular/common/http';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 
 
@@ -13,7 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,

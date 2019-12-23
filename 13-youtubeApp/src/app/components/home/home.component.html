@@ -2,5 +2,49 @@
   <h1>Canal de youtube</h1>
   <hr/>
 
-  
+  <div class="card-columns">
+
+    <div
+    *ngFor="let video of videos"
+    class="card animated fadeIn fast">
+      <img [src]="video.thumbnails.high.url" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">{{ video.title }}</h5>
+        <button 
+        (click)="verVideo(video)"
+        type="button" class="btn btn-outline-primary btn-block">Ver video</button>
+      </div>
+    </div>
+
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-lg" role="document">
+        <div 
+        *ngIf="videoSel"
+        class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{ videoSel.title }}</h5>          
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="315" [src]="videoSel.resourceId.videoId | domseguro" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="modal-footer">
+            <button
+            (click) ="cerrarModal()"
+            type="button" class="btn btn-secondary">Cerrar</button
+              >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button
+  (click)="cargarVideos()"
+  type="button" class="btn btn-lg btn-outline-primary btn-block">
+    Cargar más videos
+  </button
+  >
+
 </div>
