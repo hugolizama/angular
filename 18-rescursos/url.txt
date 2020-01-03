@@ -1,0 +1,7 @@
+https://swimlane.github.io/ngx-charts/#/ngx-charts/bar-vertical
+
+
+https://stackblitz.com/edit/vertical-bar-chart?embed=1&file=app/app.component.ts
+
+
+https://github.com/swimlane/ngx-charts
