@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1>Virtual Scroll</h1>
+    <hr/>
+
+    <cdk-virtual-scroll-viewport itemSize="50" class="list-container list-group">
+      <div 
+      *cdkVirtualFor="let persona of personas; let i = index; let conteo = count"
+      class="list-group-item">
+        Item {{ i + 1 }} de {{ conteo }}
+      </div>
+    </cdk-virtual-scroll-viewport>
+  </div>
+</div>
