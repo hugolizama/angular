@@ -5,3 +5,8 @@ https://stackblitz.com/edit/vertical-bar-chart?embed=1&file=app/app.component.ts
 
 
 https://github.com/swimlane/ngx-charts
+
+
+
+
+https://github.com/angular/angularfire/blob/master/docs/install-and-setup.md

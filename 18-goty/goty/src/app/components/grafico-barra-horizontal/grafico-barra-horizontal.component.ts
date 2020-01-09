@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 
 
 @Component({
@@ -6,26 +6,28 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './grafico-barra-horizontal.component.html',
   styles: []
 })
-export class GraficoBarraHorizontalComponent implements OnInit {
+export class GraficoBarraHorizontalComponent implements OnInit, OnDestroy {
 
-  results: any[] = [
-    {
-      'name': 'Juego 1',
-      'value': 20
-    },
-    {
-      'name': 'Juego 2',
-      'value': 30
-    },
-    {
-      'name': 'Juego 3',
-      'value': 15
-    },
-    {
-      'name': 'Juego 4',
-      'value': 35
-    }
-  ];
+  // results: any[] = [
+  //   {
+  //     'name': 'Juego 1',
+  //     'value': 20
+  //   },
+  //   {
+  //     'name': 'Juego 2',
+  //     'value': 30
+  //   },
+  //   {
+  //     'name': 'Juego 3',
+  //     'value': 15
+  //   },
+  //   {
+  //     'name': 'Juego 4',
+  //     'value': 35
+  //   }
+  // ];
+
+  @Input() results: any[] = [];
 
 
   // options
@@ -40,10 +42,29 @@ export class GraficoBarraHorizontalComponent implements OnInit {
 
   colorScheme = 'nightLights';
 
-  constructor() { 
+  intervalo: any;
+
+  constructor() {
+    // this.intervalo = setInterval(() => {
+    //   console.log('tick');
+
+    //   const newResults = [...this.results];
+
+    //   // tslint:disable-next-line: forin
+    //   for (const i in newResults) {
+    //     newResults[i].value = Math.round(Math.random() * 100);
+    //   }
+
+    //   this.results = [...newResults];
+    // }, 1500);
+
   }
 
   ngOnInit() {
+  }
+
+  ngOnDestroy() {
+    // clearInterval(this.intervalo);
   }
 
   onSelect(event) {

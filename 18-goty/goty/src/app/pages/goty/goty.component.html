@@ -1,3 +1,24 @@
-<p>
-  goty works!
-</p>
+<h2>Votar por el juego del año</h2>
+<hr/>
+
+<div class="row">
+  <div class="col">
+    <div class="card-columns">
+
+      <div
+      *ngFor="let juego of juegos"
+      class="card bg-dark">
+        <img [src]="juego.url" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">{{ juego.name }} </h5>  
+          <p>Click aquí para votar por este juego</p>    
+          
+          <button
+          (click)="votarJuego(juego)"
+          class="btn btn-block btn-outline-primary">Votar</button>
+        </div>
+      </div>      
+
+    </div>
+  </div>
+</div>
