@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { map } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -9,7 +10,7 @@ import { map } from 'rxjs/operators';
 export class YoutubeService {
 
   private urlBase = 'https://www.googleapis.com/youtube/v3';
-  private apiKey = 'AIzaSyATbCxoUiySyxxHScHDHkiPCBo0-RxZXjw';
+  private apiKey = environment.apiKey;
   private playlist = 'UUG7AaCh_CiG6pq_rRDNw72A';
   private nextPageToken: string;
 
