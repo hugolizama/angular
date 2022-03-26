@@ -39,7 +39,15 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+12-googleMaps/src/environments/_environment.ts
+12-googleMaps/src/environments/_environment.prod.ts
+**/_environment.ts
+**/_environment.prod.ts
+**/_serviceAccountKey.json
 
 # System Files
 .DS_Store
 Thumbs.db
+
+
+

@@ -1,0 +1,13 @@
+ 
+
+ 
+ sudo npm install -g @angular/cli@9.1.4
+ 
+ sudo npm install -g @ionic/cli@6.4.0
+ 
+ sudo npm install -g typescript@3.8.3
+ ---------------------------------------------
+ 
+ 
+
+

@@ -10,6 +10,7 @@ import { MapaEditarComponent } from './components/mapa/mapa-editar.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AgmCoreModule } from '@agm/core';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { AgmCoreModule } from '@agm/core';
     BrowserAnimationsModule,
     MaterialModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAF21UMAomTwLwYzJOGTdfBkkus-LfpM4E'
+      apiKey: environment.apiKey
     }),
     ReactiveFormsModule
   ],
